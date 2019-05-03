@@ -1,0 +1,32 @@
+<div class="container mt-5">
+  <div
+    class="d-inline-block"
+    appOnoutsideclick
+    (clickOutside)="onClickedOutside($event)"
+  >
+    <app-tooltipcontainer
+      [hideTooltip]="hideTooltipBodyA"
+      [tooltipBody]="tooltipBodyA"
+      [classContainer]="classContainer"
+      [classContent]="classContent"
+    ></app-tooltipcontainer>
+    <button class="btn btn-primary" (click)="showTooltip($event)" value="A">
+      Button A
+    </button>
+  </div>
+  <div
+    class="d-inline-block ml-2"
+    appOnoutsideclick
+    (clickOutside)="onClickedOutside($event)"
+  >
+    <app-tooltipcontainer
+      [hideTooltip]="hideTooltipBodyB"
+      [tooltipBody]="tooltipBodyB"
+      [classContainer]="classContainer"
+      [classContent]="classContent"
+    ></app-tooltipcontainer>
+    <button class="btn btn-danger" (click)="showTooltip($event)" value="B">
+      Button B
+    </button>
+  </div>
+</div>

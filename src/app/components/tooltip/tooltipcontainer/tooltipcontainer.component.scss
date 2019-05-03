@@ -1,0 +1,15 @@
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  bottom: 3.7em;
+  right: 88%;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+.tooltip-container-bottom {
+  position: relative;
+  display: inline-block;
+  top: 2em;
+  right: 88%;
+  border-bottom: 1px dotted Green; /* If you want dots under the hoverable text */
+}
